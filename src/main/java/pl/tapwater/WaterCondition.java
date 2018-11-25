@@ -17,14 +17,35 @@ public class WaterCondition {
     Long id;
     private @NonNull
     String cityName;
-    private @NonNull
-    boolean isWaterSafeToDrink;
+
+    private int color;
+
+    private int smell;
+
+    private int hardness;
+
+    private float iron;
+
+    private float manganese;
+
+    private float ammonia;
+
+    private int bacteria;
+
+    private boolean ecola;
 
     private WaterCondition() {
     }
 
-    public WaterCondition(String cityName, boolean isWaterSafeToDrink) {
+    public WaterCondition(String cityName, int color, int smell, int hardness, float iron, float manganese, float ammonia, int bacteria, boolean ecola) {
         this.cityName = cityName;
-        this.isWaterSafeToDrink = isWaterSafeToDrink;
+        this.color = color;
+        this.smell = smell;
+        this.hardness = hardness;
+        this.iron = iron;
+        this.manganese = manganese;
+        this.ammonia = ammonia;
+        this.bacteria = bacteria;
+        this.ecola = ecola;
     }
 }
